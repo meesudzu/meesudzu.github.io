@@ -16,7 +16,7 @@
     "js-beautify": "^1.15.4",
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.460.0",
-    "mermaid": "^11.15.0",
+    "mermaid": "^11.16.1",
     "papaparse": "^5.5.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
