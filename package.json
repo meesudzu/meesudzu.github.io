@@ -12,7 +12,7 @@
     "bcryptjs": "^3.0.3",
     "clean-css": "^5.3.3",
     "cronstrue": "^3.11.0",
-    "diff": "^7.0.0",
+    "diff": "^8.0.3",
     "js-beautify": "^1.15.4",
     "js-yaml": "^4.1.1",
     "lucide-react": "^0.460.0",
