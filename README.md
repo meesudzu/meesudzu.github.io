@@ -27,6 +27,9 @@ A sleek collection of developer tools built with React + Vite. Runs entirely in-
 | **T9 Decoder** | Decode and encode T9 phone keypad sequences (multi-tap) |
 | **Morse Code** | Translate text ↔ Morse, play the audio signal, and watch each dit/dah on a timing diagram |
 | **Subnet Calc** | Parse IPv4 CIDR and split a network into equal-sized subnets for devops/IP planning |
+| **UUID / ULID** | Generate UUID v1/v4/v5/v7, ULID, and NanoID with bulk output, format options, and copy-all |
+| **Chmod Calc** | Convert between octal, symbolic, and `ls -l` permission formats; toggle bits visually with setuid/setgid/sticky support |
+| **Crontab Diff** | Compare two cron expressions: human description, next 10 runs each, 24h stats, and first divergence within 7 days |
 
 ## Quick Start
 

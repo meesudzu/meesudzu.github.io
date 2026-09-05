@@ -11,6 +11,7 @@
   "dependencies": {
     "bcryptjs": "^3.0.3",
     "clean-css": "^5.3.3",
+    "cron-parser": "^5.10.0",
     "cronstrue": "^3.11.0",
     "diff": "^7.0.0",
     "js-beautify": "^1.15.4",

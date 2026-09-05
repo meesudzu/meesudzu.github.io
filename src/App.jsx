@@ -12,6 +12,7 @@ import {
   Hash,
   Lock,
   CalendarClock,
+  CalendarDays,
   Hourglass,
   Mail,
   FileJson,
@@ -20,7 +21,8 @@ import {
   Table,
   FileText,
   GitCompare,
-  Network
+  Network,
+  Fingerprint
 } from 'lucide-react';
 
 import { Sidebar, Header } from './layouts';
@@ -37,7 +39,10 @@ import {
   PasswordGenerator,
   HashGenerator,
   BasicAuthGenerator,
+  ChmodCalculator,
   CrontabGenerator,
+  CrontabDiff,
+  UuidGenerator,
   SmtpChecker,
   SubnetCalculator,
   JsonToEnv,
@@ -78,6 +83,7 @@ const MENU_GROUPS = [
       { id: 'password', label: 'Password Gen', icon: Lock, keywords: ['password', 'generate', 'random', 'security', 'pass', 'strength'] },
       { id: 'hash', label: 'Hash Generator', icon: Hash, keywords: ['hash', 'md5', 'sha1', 'sha256', 'sha512', 'encode', 'digest'] },
       { id: 'basicauth', label: 'Basic Auth', icon: KeyRound, keywords: ['basic', 'auth', 'encode', 'decode', 'base64', 'header'] },
+      { id: 'chmod', label: 'Chmod Calc', icon: KeyRound, keywords: ['chmod', 'permission', 'mode', 'octal', 'symbolic', 'rwx', 'unix', 'file', 'ls'] },
     ]
   },
   {
@@ -92,6 +98,8 @@ const MENU_GROUPS = [
       { id: 'textanalyzer', label: 'Text Analyzer', icon: AlignLeft, keywords: ['text', 'analyze', 'count', 'words', 'characters', 'lines', 'length'] },
       { id: 'textdiff', label: 'Text Diff', icon: GitCompare, keywords: ['text', 'diff', 'compare', 'line', 'word', 'unified', 'side-by-side'] },
       { id: 'crontab', label: 'Crontab Gen', icon: CalendarClock, keywords: ['cron', 'crontab', 'schedule', 'time', 'generator', 'timer'] },
+      { id: 'crontab-diff', label: 'Crontab Diff', icon: CalendarDays, keywords: ['cron', 'crontab', 'compare', 'diff', 'schedule', 'next runs', 'overlap'] },
+      { id: 'uuid', label: 'UUID / ULID', icon: Fingerprint, keywords: ['uuid', 'ulid', 'nanoid', 'id', 'unique', 'random', 'generator', 'guid', 'v4', 'v7'] },
       { id: 'datatable', label: 'Data Table View', icon: Table, keywords: ['csv', 'tsv', 'table', 'data', 'preview', 'excel', 'spreadsheet'] },
       { id: 'subnet', label: 'Subnet Calc', icon: Network, keywords: ['subnet', 'cidr', 'ipv4', 'network', 'mask', 'subnetting', 'split', 'devops', 'address', 'broadcast'] },
     ]
@@ -120,7 +128,10 @@ const FEATURE_COMPONENTS = {
   password: PasswordGenerator,
   hash: HashGenerator,
   basicauth: BasicAuthGenerator,
+  chmod: ChmodCalculator,
   crontab: CrontabGenerator,
+  'crontab-diff': CrontabDiff,
+  uuid: UuidGenerator,
   smtp: SmtpChecker,
   json2env: () => <JsonToEnv initialMode="json2env" />,
   env2json: () => <JsonToEnv initialMode="env2json" />,
