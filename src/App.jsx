@@ -19,7 +19,8 @@ import {
   Braces,
   Table,
   FileText,
-  GitCompare
+  GitCompare,
+  Network
 } from 'lucide-react';
 
 import { Sidebar, Header } from './layouts';
@@ -38,6 +39,7 @@ import {
   BasicAuthGenerator,
   CrontabGenerator,
   SmtpChecker,
+  SubnetCalculator,
   JsonToEnv,
   JsonBeautifier,
   CodeTools,
@@ -91,6 +93,7 @@ const MENU_GROUPS = [
       { id: 'textdiff', label: 'Text Diff', icon: GitCompare, keywords: ['text', 'diff', 'compare', 'line', 'word', 'unified', 'side-by-side'] },
       { id: 'crontab', label: 'Crontab Gen', icon: CalendarClock, keywords: ['cron', 'crontab', 'schedule', 'time', 'generator', 'timer'] },
       { id: 'datatable', label: 'Data Table View', icon: Table, keywords: ['csv', 'tsv', 'table', 'data', 'preview', 'excel', 'spreadsheet'] },
+      { id: 'subnet', label: 'Subnet Calc', icon: Network, keywords: ['subnet', 'cidr', 'ipv4', 'network', 'mask', 'subnetting', 'split', 'devops', 'address', 'broadcast'] },
     ]
   }
 ];
@@ -126,6 +129,7 @@ const FEATURE_COMPONENTS = {
   jsonkeydiff: JsonKeyDiff,
   textdiff: TextDiff,
   datatable: DataTablePreview,
+  subnet: SubnetCalculator,
   'codetools-js': () => <CodeTools initialLanguage="javascript" languageRoutes={CODE_TOOL_ROUTES} />,
   'codetools-css': () => <CodeTools initialLanguage="css" languageRoutes={CODE_TOOL_ROUTES} />,
   'codetools-html': () => <CodeTools initialLanguage="html" languageRoutes={CODE_TOOL_ROUTES} />,

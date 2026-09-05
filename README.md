@@ -26,6 +26,7 @@ A sleek collection of developer tools built with React + Vite. Runs entirely in-
 | **Number Converter** | Convert between decimal, hex, octal, and binary (supports BigInt) |
 | **T9 Decoder** | Decode and encode T9 phone keypad sequences (multi-tap) |
 | **Morse Code** | Translate text ↔ Morse, play the audio signal, and watch each dit/dah on a timing diagram |
+| **Subnet Calc** | Parse IPv4 CIDR and split a network into equal-sized subnets for devops/IP planning |
 
 ## Quick Start
 
